@@ -16,7 +16,8 @@ namespace MVC_ActionFilters.Filters
 
         public void OnAuthenticationChallenge(AuthenticationChallengeContext filterContext)
         {
-            //throw new NotImplementedException();
+            return;
+            
             var user = filterContext.HttpContext.User;
             if(user==null||!user.Identity.IsAuthenticated)
             {
