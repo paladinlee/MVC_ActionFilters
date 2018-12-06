@@ -23,6 +23,7 @@ namespace MVC_ActionFilters.Controllers
             return View();
         }
 
+        [MVC5Authv2]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
