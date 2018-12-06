@@ -26,5 +26,18 @@ namespace MVC_ActionFilters.Controllers
 
             return View();
         }
+
+        public ActionResult GetImageTag()
+        {
+            return View();
+        }
+
+        [ChildActionOnly] //限制只能由子要求存取，也就是不允許使用者直接在 URL 上面打網址
+        public ActionResult ImageTag(string name)
+        {
+            string filePath = "/Images/"+name+".jpg";
+            string imgTag = "<img src=\""+filePath+"\" />";
+            return Content(imgTag);
+        }
     }
 }
