@@ -36,7 +36,7 @@ namespace MVC_ActionFilters.Controllers
         public ActionResult ImageTag(string name)
         {
             string filePath = "/Images/"+name+".jpg";
-            string imgTag = "<img src=\""+filePath+"\" />";
+            string imgTag = "<img width='800px' src=\""+filePath+"\" />";
             return Content(imgTag);
         }
     }

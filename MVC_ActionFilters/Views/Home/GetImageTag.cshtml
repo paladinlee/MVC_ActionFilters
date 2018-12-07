@@ -4,4 +4,14 @@
 }
 
 <h2>GetImageTag</h2>
+<div>
+    @Html.ActionLink("點我", "ImageTag", new { name = "88-1" }, new { id = "myLink" })
 
+</div>
+<div style="width:800px">
+    @{
+        Html.RenderAction("ImageTag", new { name = "88-1" });
+    }
+
+
+</div>
