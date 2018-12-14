@@ -10,6 +10,7 @@ namespace MVC_ActionFilters.Controllers
     {
         public ActionResult Index()
         {
+            throw new Exception("測試 Error 頁面");
             return View();
         }
 
